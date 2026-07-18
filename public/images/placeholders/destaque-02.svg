@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder local 02</title>
+  <desc id="desc">Composição geométrica provisória nas cores da identidade do Cá Entre Nóis.</desc>
+  <rect width="1200" height="1200" fill="#FED32E"/>
+  <circle cx="330" cy="850" r="350" fill="#FEAF24"/>
+  <rect x="560" y="-80" width="480" height="1040" rx="240" transform="rotate(24 560 -80)" fill="#FFF9F1"/>
+  <path d="M80 260H1120M80 300H1120" stroke="#2C2A25" stroke-width="6"/>
+  <text x="80" y="180" fill="#2C2A25" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="8">DESTAQUE</text>
+  <text x="720" y="880" fill="#2C2A25" font-family="Arial, sans-serif" font-size="270" font-weight="700">02</text>
+  <text x="80" y="1105" fill="#2C2A25" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="5">IMAGEM PROVISÓRIA</text>
+</svg>
