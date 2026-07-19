@@ -1,12 +1,6 @@
 import Image from "next/image";
 
-import { featuredWorks, type FeaturedWork } from "@/content/site";
-
-const formatClasses: Record<FeaturedWork["format"], string> = {
-  portrait: "aspect-[4/5]",
-  square: "aspect-square",
-  landscape: "aspect-[8/5]",
-};
+import { artist, featuredWorks } from "@/content/site";
 
 export function FeaturedGallery() {
   return (
@@ -33,8 +27,8 @@ export function FeaturedGallery() {
           </div>
 
           <p className="max-w-sm text-sm leading-relaxed text-charcoal/65 lg:col-span-3 lg:text-base">
-            Seleção provisória. As artes, títulos e fichas técnicas poderão ser
-            substituídos diretamente no conteúdo local.
+            Seleção de ilustrações, identidade visual e registros fotográficos
+            de Ioná Araujo. Datas finais ainda devem ser confirmadas.
           </p>
         </header>
 
@@ -49,25 +43,19 @@ export function FeaturedGallery() {
               }`}
             >
               <figure>
-                <div
-                  className={`relative overflow-hidden border border-charcoal/20 bg-paper ${formatClasses[work.format]}`}
-                >
+                <div className="overflow-hidden">
                   <Image
                     src={work.imageSrc}
                     alt={work.imageAlt}
-                    fill
-                    unoptimized
+                    width={work.width}
+                    height={work.height}
                     sizes={
                       work.columnSpan === 7
                         ? "(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 58vw"
                         : "(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 42vw"
                     }
-                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.015]"
+                    className="h-auto w-full transition-transform duration-500 ease-out group-hover:scale-[1.015] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                   />
-
-                  <span className="absolute left-3 top-3 rounded-full border border-charcoal/20 bg-white/90 px-3 py-1.5 text-[0.625rem] font-bold tracking-[0.12em] uppercase backdrop-blur-sm sm:left-4 sm:top-4">
-                    Placeholder local
-                  </span>
                 </div>
 
                 <figcaption className="mt-5">
@@ -89,6 +77,9 @@ export function FeaturedGallery() {
                       </div>
                       <p className="mt-3 max-w-xl text-sm leading-relaxed text-charcoal/65 sm:text-base">
                         {work.description}
+                      </p>
+                      <p className="mt-3 text-xs font-bold tracking-[0.08em] text-brick uppercase">
+                        {artist.credit}
                       </p>
                     </div>
                   </div>

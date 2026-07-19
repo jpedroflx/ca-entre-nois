@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { audiovisualSection } from "@/content/site";
 
 export function AudiovisualSection() {
@@ -35,24 +33,24 @@ export function AudiovisualSection() {
 
         <div className="mt-14 grid gap-7 border-t border-paper/20 pt-7 lg:mt-20 lg:grid-cols-12 lg:gap-8 lg:pt-10">
           <figure className="min-w-0 lg:col-span-9">
-            <div className="relative aspect-video overflow-hidden border border-paper/25 bg-brick">
-              <Image
-                src={audiovisualSection.posterSrc}
-                alt={audiovisualSection.posterAlt}
-                fill
-                unoptimized
-                sizes="(max-width: 1023px) 100vw, 75vw"
-                className="object-cover"
-              />
-              <span className="absolute left-3 top-3 rounded-full border border-paper/25 bg-charcoal/85 px-3 py-1.5 text-[0.625rem] font-bold tracking-[0.12em] text-paper uppercase backdrop-blur-sm sm:left-4 sm:top-4">
-                Placeholder local · 16:9
-              </span>
+            <div className="relative aspect-video overflow-hidden">
+              <video
+                controls
+                preload="metadata"
+                playsInline
+                poster={audiovisualSection.posterSrc}
+                aria-label={audiovisualSection.videoLabel}
+                className="h-full w-full object-cover"
+              >
+                <source src={audiovisualSection.videoSrc} type="video/mp4" />
+                Seu navegador não suporta vídeo HTML5.
+              </video>
             </div>
           </figure>
 
           <div className="flex flex-col justify-end lg:col-span-3">
             <p className="text-xs font-bold tracking-[0.16em] text-orange uppercase">
-              Em preparação
+              Produção selecionada
             </p>
             <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] sm:text-3xl">
               {audiovisualSection.workTitle}

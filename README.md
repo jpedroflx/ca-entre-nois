@@ -1,6 +1,6 @@
 # Cá Entre Nóis
 
-MVP de página única do projeto artístico Cá Entre Nóis, desenvolvido com Next.js, TypeScript, App Router, Tailwind CSS e Motion. O conteúdo é local e não utiliza banco de dados, carrinho ou pagamentos.
+MVP de página única do projeto artístico Cá Entre Nóis, de Ioná Araujo, desenvolvido com Next.js, TypeScript, App Router, Tailwind CSS e Motion. O conteúdo é local e não utiliza banco de dados, carrinho ou pagamentos.
 
 ## Executar localmente
 
@@ -30,11 +30,13 @@ npm run start
 
 - Textos, navegação e fichas provisórias ficam em `src/content/site.ts`.
 - Componentes de seção ficam em `src/components/sections`.
-- Ativos publicados ficam em `public/images`.
+- Imagens publicadas ficam em `public/images` e vídeos em `public/videos`.
 - Arquivos autorais de origem ficam em `references` e não devem ser editados.
 - Para substituir um placeholder, adicione a arte em `public/images` e atualize o caminho correspondente em `src/content/site.ts`.
 
-A logo publicada em `public/images/brand/logo-oficial.jpeg` é uma cópia integral do arquivo autoral. Não a redesenhe, retoque ou substitua por conteúdo gerado por IA.
+Os vídeos usam controles nativos, não iniciam automaticamente e carregam apenas metadados antes da interação do usuário.
+
+Todo o acervo apresentado no site é de autoria de Ioná Araujo. A logo publicada em `public/images/brand/logo-oficial.jpeg` é uma cópia integral da arte autoral e não deve ser redesenhada, retocada ou substituída por conteúdo gerado por IA.
 
 ## Publicar na Vercel
 
@@ -44,5 +46,4 @@ A logo publicada em `public/images/brand/logo-oficial.jpeg` é uma cópia integr
 4. Publique e valide a URL gerada em celular e computador.
 
 O MVP não exige variáveis de ambiente.
-=======
 

@@ -1,4 +1,4 @@
-import { socialLinks } from "@/content/site";
+import { artist, socialLinks } from "@/content/site";
 
 export function SiteFooter() {
   return (
@@ -28,8 +28,8 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-6 flex flex-col gap-2 text-xs leading-relaxed text-paper/55 sm:flex-row sm:items-center sm:justify-between">
-          <p>Projeto artístico · Ilustração e audiovisual</p>
-          <p>© 2026 Cá Entre Nóis</p>
+          <p>Projeto artístico de {artist.name} · Ilustração e audiovisual</p>
+          <p>© 2026 {artist.name} · Cá Entre Nóis</p>
         </div>
       </div>
 

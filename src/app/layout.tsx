@@ -13,7 +13,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Cá Entre Nóis — Ilustrações e audiovisual",
   description:
-    "Projeto artístico de ilustrações e produções audiovisuais. Cá Entre Nóis.",
+    "Projeto artístico de Ioná Araujo com ilustrações, fotografias e produções audiovisuais.",
+  authors: [{ name: "Ioná Araujo" }],
+  creator: "Ioná Araujo",
 };
 
 export const viewport: Viewport = {
