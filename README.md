@@ -44,3 +44,5 @@ A logo publicada em `public/images/brand/logo-oficial.jpeg` é uma cópia integr
 4. Publique e valide a URL gerada em celular e computador.
 
 O MVP não exige variáveis de ambiente.
+=======
+
